@@ -1,0 +1,1031 @@
+body{
+    /* background-color: black; */
+    display: flex;
+    justify-content:center;
+}
+.macbook{
+    width: 400px;
+    height: 400px;
+    
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotate3d(1, 1, 1, -7deg);
+    animation: rotate infinite 7s ease;
+}
+@keyframes rotate{
+    0% {
+        transform: rotateX(-20deg) rotateY(0deg) rotateZ(0deg);
+      }
+      5% {
+        transform: rotateX(-20deg) rotateY(-20deg) rotateZ(0deg);
+      }
+      20% {
+        transform: rotateX(30deg) rotateY(200deg) rotateZ(0deg);
+      }
+      25% {
+        transform: rotateX(-60deg) rotateY(150deg) rotateZ(0deg);
+      }
+      60% {
+        transform: rotateX(-20deg) rotateY(130deg) rotateZ(0deg);
+      }
+      65% {
+        transform: rotateX(-20deg) rotateY(120deg) rotateZ(0deg);
+      }
+      80% {
+        transform: rotateX(-20deg) rotateY(375deg) rotateZ(0deg);
+      }
+      85% {
+        transform: rotateX(-20deg) rotateY(357deg) rotateZ(0deg);
+      }
+      87% {
+        transform: rotateX(-20deg) rotateY(360deg) rotateZ(0deg);
+      }
+      100% {
+        transform: rotateX(-20deg) rotateY(360deg) rotateZ(0deg);
+      }
+}
+
+.outside{
+    width: 250px;
+    height: 180px;
+    position: absolute;
+    background: #cacaca;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    bottom: 95px;
+    transform-origin: 50% 175px;
+    animation: lid-screen infinite 7s ease;
+}
+@keyframes lid-screen{
+    0% {
+        transform: rotateX(0deg);        
+    }
+    5% {
+        transform: rotateX(50deg);        
+    }
+    20% {
+        transform: rotateX(-90deg);
+    }
+    25% {
+        transform: rotateX(15deg);
+    }
+    30% {
+        transform: rotateX(-5deg);
+    }
+    38% {
+        transform: rotateX(5deg);
+    }
+    48% {
+        transform: rotateX(0deg);
+    }
+    90% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+.outside img{
+    width: 20px;
+    position: absolute;
+}
+.touchscreen{
+    width: 250px;
+    height: 180px;
+    position: absolute;
+    background: #cacaca;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(2px);
+}
+.screen-of-mac{
+    width: 200px;
+    height: 145px;
+    background: black;
+    position: absolute;
+}
+.shadow-of-screen{
+    width: 200px;
+    height: 145px;
+    background: linear-gradient(-135deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0.1) 47%,rgba(255,255,255,0) 48%);
+    animation: shadow-of-screen infinite 7s ease;
+}
+@keyframes shadow-of-screen{
+    0% {
+        background-position: -20px 0px;
+    }
+    5% {
+        background-position: -40px 0px;
+    }
+    20% {
+        background-position: 200px 0;
+    }
+    50% {
+        background-position: -200px 0;
+    }
+    80% {
+        background-position: 0px 0px;
+    }
+    85% {
+        background-position: -30px 0;
+    }
+    90% {
+        background-position: -20px 0;
+    }
+    100% {
+        background-position: -20px 0px;
+    }
+}
+.camera{
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background: #000;
+    position: absolute;
+    top: 7px;
+}
+.model{
+    position: absolute;
+    font-size: 8px;
+    color: #666;
+    bottom: -4px;
+}
+.bottom-side{
+    width: 250px;
+    height: 180px;
+    background: #cacaca;
+    position: absolute;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    transform: rotateY(180deg) rotateX(-90deg);
+    bottom: -85px;
+    transform-origin: 50% 0px;
+}
+.keyboard{
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.key-1{
+    width: 8px;
+    height: 6px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    margin-left: 2px;
+}
+.back-side{
+    width: 250px;
+    height: 180px;
+    background: #cacaca;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transform: translateZ(2px);
+    position: absolute;
+}
+.foot1{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 100%;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.foot2{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 100%;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+.foot-1{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 100%;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+.foot-2{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 100%;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+.key-2{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    margin-top: -35px;
+}
+.key-2-2{
+    width: 7px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    margin-top: -35px;
+}
+.key-2-3{
+    width: 20px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    margin-top: -35px;
+}
+.key-2-4{
+    width: 9px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    margin-top: -35px;
+}
+
+
+.key-3-1{
+    width: 8px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 1px;
+
+}
+.key-3-2{
+    width: 8px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 182px;
+}
+.key-3-3{
+    width: 8px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 172px;
+}
+.key-3-4{
+    width: 12px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 159px;
+}
+.key-3-5{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 148px;
+}
+.key-3-6{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 136px;
+}
+.key-3-7{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 124px;
+}
+.key-3-8{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 112px;
+}
+.key-3-9{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 100px;
+}
+.key-3-10{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 87px;
+}
+.key-3-11{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 75px;
+}
+.key-3-12{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 63px;
+}
+.key-3-13{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 51px;
+}
+.key-3-14{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 39px;
+}
+.key-3-15{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 27px;
+}
+.key-3-16{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 15px;
+}
+.key-3-17{
+    width: 12px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 1px;
+}
+
+.key{
+    width: 200px;
+    height: 10px;
+    position: absolute;
+    top: 20px;
+}
+.key1{
+    width: 200px;
+    height: 10px;
+    position: absolute;
+    top: 32px;
+}
+.key-4-1{
+    width: 8px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 1px;
+
+}
+.key-4-2{
+    width: 8px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 182px;
+}
+.key-4-3{
+    width: 8px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 172px;
+}
+.key-4-4{
+    width: 18px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 152px;
+}
+.key-4-5{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 140px;
+}
+.key-4-6{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 127px;
+}
+.key-4-7{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 115px;
+}
+.key-4-8{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 103px;
+}
+.key-4-9{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 91px;
+}
+.key-4-10{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 79px;
+}
+.key-4-11{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 66px;
+}
+.key-4-12{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 54px;
+}
+.key-4-13{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 42px;
+}
+.key-4-14{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 30px;
+}
+.key-4-15{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 18px;
+}
+.key-4-16{
+    width: 14px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 1px;
+}
+.key2{
+    width: 200px;
+    height: 10px;
+    position: absolute;
+    top: 44px;
+}
+.key-5-1{
+    width: 8px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 1px;
+
+}
+.key-5-2{
+    width: 8px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 182px;
+}
+.key-5-3{
+    width: 8px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 172px;
+}
+.key-5-4{
+    width: 26px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 144px;
+}
+.key-5-5{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 131px;
+}
+.key-5-6{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 119px;
+}
+.key-5-7{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 107px;
+}
+.key-5-8{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 95px;
+}
+.key-5-9{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 83px;
+}
+.key-5-10{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 71px;
+}
+.key-5-11{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 59px;
+}
+.key-5-12{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 47px;
+}
+.key-5-13{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 35px;
+}
+.key-5-14{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 23px;
+}
+.key-5-15{
+    width: 20px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 1px;
+}
+.key3{
+    width: 200px;
+    height: 10px;
+    position: absolute;
+    top: 56px;
+}
+.key-6-1{
+    width: 8px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 1px;
+
+}
+.key-6-2{
+    width: 8px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 182px;
+}
+.key-6-3{
+    width: 8px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 172px;
+}
+.key-6-4{
+    width: 8px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 161px;
+}
+.key-6-5{
+    width: 11px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 148px;
+}
+.key-6-6{
+    width: 8px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 138px;
+}
+.key-6-7{
+    width: 8px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 127px;
+}
+.key-6-8{
+    width: 8px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 116px;
+}
+.key-6-9{
+    width: 8px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 106px;
+}
+.key-6-10{
+    width: 55px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 48px;
+}
+.key-6-11{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 36px;
+}
+.key-6-12{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 25px;
+}
+.key-6-13{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 13px;
+}
+.key-6-14{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 2px;
+    font-size: 4px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 1px;
+}
+.touch-id{
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    background: #acacac;
+    bottom: -63px;
+    border-radius: 5px;
+    border: 2px solid #80808024;
+}
+.shadow{
+    position: absolute;
+    width: 60px;
+    height: 0px;
+    top: 500px;
+    transform: rotateX(80deg) rotateY(0deg) rotateZ(0deg);
+    box-shadow: 0 0 60px 40px rgba(0,0,0,0.3);
+    animation: shadow infinite 7s ease;
+}
+@keyframes shadow{
+    0% {
+        transform: rotateX(80deg) rotateY(0deg) rotateZ(0deg);
+        box-shadow: 0 0 60px 40px rgba(0,0,0,0.3);
+    }
+    5% {
+        transform: rotateX(80deg) rotateY(10deg) rotateZ(0deg);
+        box-shadow: 0 0 60px 40px rgba(0,0,0,0.3);
+    }
+    20% {
+        transform: rotateX(30deg) rotateY(-20deg) rotateZ(-20deg);
+        box-shadow: 0 0 50px 30px rgba(0,0,0,0.3);
+    }
+    25% {
+        transform: rotateX(80deg) rotateY(-20deg) rotateZ(50deg);
+        box-shadow: 0 0 35px 15px rgba(0,0,0,0.1);
+    }
+    60% {
+        transform: rotateX(80deg) rotateY(0deg) rotateZ(-50deg) translateX(30px);
+        box-shadow: 0 0 60px 40px rgba(0,0,0,0.3);
+    }
+    100% {
+        box-shadow: 0 0 60px 40px rgba(0,0,0,0.3);
+    }
+}
